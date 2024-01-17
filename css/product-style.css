@@ -1,0 +1,382 @@
+/* Font Freight Medium */
+@import url(https://db.onlinewebfonts.com/c/90fe831fa65b9632a4790c1a1732e9ab?family=FreightNeo+W03+Medium);
+
+/* Font Freight Light */
+
+@import url(https://db.onlinewebfonts.com/c/251dff4c8f7ab0a6f3258b61f6527ad5?family=FreightNeo+W03+Light);
+
+/* Font Freight Medium Italic */
+@import url(https://db.onlinewebfonts.com/c/ee4d865b795f326ff226bc0baaa2694c?family=FreightNeo+W03+Medium+Italic);
+
+/* Font Freight Medium Italic Light*/
+@import url(https://db.onlinewebfonts.com/c/01f250e37cc2465ba7178a3181078f59?family=FreightNeo+W03+Light+Italic);
+
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400&display=swap');
+
+/* tamil */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@300;400;500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Tamil:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+@font-face {
+    font-family: 'headline';
+    src:url('../font/PassionSansPDbi-SemiBoldSmallCaps.ttf.woff') format('woff'),
+        url('../font/PassionSansPDbi-SemiBoldSmallCaps.ttf.svg#PassionSansPDbi-SemiBoldSmallCaps') format('svg'),
+        url('../font/PassionSansPDbi-SemiBoldSmallCaps.ttf.eot'),
+        url('../font/PassionSansPDbi-SemiBoldSmallCaps.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: sourcesanspro;
+    src: url('font/SourceSansPro-ExtraLight.otf');
+}
+
+:root {
+    /* ====Main theme colors==== */
+    --first-color: #475D5B;
+    --second-color: #42B300;
+    --third-color: #FAAE2B;
+    --headline-color: #FA5246;
+
+    /* ====Hover colors==== */
+    --hover-color: #2cb67d;
+    --button-hover-color: #FFB534;
+
+    /* ====Background colors==== */
+    --body-bg-color: #fefefe;
+    --card-bg-color: #fff;
+    --modal-bg-color: #fff;
+    --bg-color: #F2F7F5;
+    --bg-transparent-color: rgba(0, 0, 0, 0.1);
+    --transparent-color-01: rgba(0, 0, 0, 0.1);
+    --transparent-color-02: rgba(106, 89, 209, 0.1);
+    --line-color: #d7d7d7;
+
+    /* ====Scroll-bar colors==== */
+    --scroll-bar-color: #c5cadf;
+    --scroll-thumb-color: #70768a;
+    --scroll-thumb-hover-color: #454f6b;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans 3', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: var(--first-color);
+    background: var(--body-bg-color);
+    margin: 2rem 0 0 0;
+    transition: .5s ease;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+
+/* Home-Why-us */
+
+.home-product{
+    width: 90%;
+    margin:5%;
+    height: 80vh;
+    background-image: url(../img/product/cover.png);
+    background-size: cover;
+    position: relative;
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+    padding-top: 31vh;
+
+}
+
+.home-product::before{
+    content: '';
+    position: absolute;
+    /* width: 90%; */
+    /* margin:5%; */
+    height: 80vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    opacity: 0.3;
+}
+
+/* .home-product-text {
+    padding-top: 130px;
+} */
+
+.home-product-text h1 {
+    font-family: headline;
+    font-size: 4vw;
+    /* font-style:italic; */
+    color: var(--body-bg-color);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    letter-spacing: 5px;
+    padding-bottom: 10px;
+    opacity: 90%;
+}
+
+.home-product-text h2 {
+    /* width: 50%; */
+    font-family: 'Noto Sans Tamil', sans-serif;
+    font-weight: 500;
+    font-size: 1.8vw;
+    color: var(--body-bg-color);
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    line-height: 2.5vw;
+    opacity: 90%;
+    padding-bottom: 10px;
+}
+
+
+
+/* Product Section */
+.product{
+    width: 100%;
+    height: auto;
+    position: relative; 
+    align-items: center;
+    justify-content: center;
+    padding: 60px 0 20px;
+    background-color: var(--bg-color);
+    margin-bottom: 5px;
+}
+
+/* .product::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(../img/bg2.png), url(../img/bg5.png);
+    background-repeat: no-repeat;
+    background-position: top left, bottom right;
+    background-size: 400px;
+    opacity: 0.08;
+    animation: arrow-down ease 2s infinite;
+} */
+
+.product-title{
+    padding-bottom: 50px;
+    border: solid;
+    width: 100%;
+    background-color: var(--title-bg-color) ;    
+    height: 210px;
+    position: absolute;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 50px;
+    top: 0;
+}
+
+.product-title h2{
+    font-family: "FreightNeo W03 Medium";
+    font-weight: 300;
+    font-size: 35px;
+    color: var(--modal-bg-color);
+    margin-top: 50px;
+}
+
+.product-title h1{
+    font-family: 'Noto Sans Tamil', sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 50px;
+    margin-bottom: 5px;
+    color: var(--button-hover-color);
+}
+
+.product .product-display{
+    /* border: solid red; */
+    margin-top: 150px;
+}
+
+.product-content{
+    position: relative;
+    /* align-items: center; */
+    justify-content: center;
+    display: flex;
+    /* margin-top: 200px; */
+    padding-bottom: 30px;
+    position: relative;
+    margin: 3% 5% 0;
+    justify-content: center;
+    /* align-items: center; */
+    /* border: solid; */
+}
+
+.product-content img.syrup{
+    width: 40%;
+    height: 30vw;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-right: 2vw;
+    margin-top: 4vw;
+    /* border: solid; */
+}
+
+.product-content img.granulated{
+    width: 40%;
+    height: auto;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-right: 2vw;
+    /* border: solid; */
+}
+
+.product-content img.block{
+    width: 40%;
+    height: auto;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-right: 2vw;
+    /* border: solid; */
+}
+
+.product-des .produk-des h2{
+    font-family: "FreightNeo W03 Light Italic";
+    font-size: 40px;
+    padding: 50px 0 20px;   
+    letter-spacing: 1px;
+    /* border: solid; */
+}
+
+.product-des .produk-des p{
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    letter-spacing: 0.6px;
+    line-height: 1.5;
+    padding-bottom: 20px;
+    text-align: justify;
+}
+
+.product-des .produk-des li{
+    list-style: circle;
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    letter-spacing: 0.6px;
+    line-height: 1.5;
+
+}
+
+.product-des a.read{
+    display: flex;
+    margin-top: 30px;
+    align-items: center;
+    font-family: "FreightNeo W03 Medium";
+    color: var(--first-color);
+    font-size: 22px;
+    animation: arrow-left ease 2s infinite;
+    transition: all .3s ease;
+    width: 350px;
+    /* border: solid; */
+}
+.product-des a.read img{
+    width: 100px;
+    height: 5px;
+    padding-right: 15px;
+}
+
+.product-des a.read:hover{
+    letter-spacing: 2px;
+    font-family: "FreightNeo W03 Medium";
+    animation: none;
+}
+
+@media only screen and (max-width: 600px){
+    .home-product-text h1{
+            font-size: 25px;
+            text-align: center;
+    }
+    .home-product-text h2{
+        font-size: 12px;
+        text-align: center;
+        width: 80%;
+        margin: 0 10%;
+        line-height: 1;
+    }
+
+    .product-title{
+        width: 100%;
+        height: 160px;
+        background-color: var(--first-color);
+    }
+
+    .product-title h2{
+        font-size: 20px;
+        margin-top: 30px;
+    }
+    
+    .product-title h1{
+        font-size: 28px;
+    }
+
+    .product-content{
+        flex-wrap: wrap;
+    }
+
+    .product-content img.syrup{
+        width: 250px;
+        height: auto;
+    }
+
+    .product-content .product-des .produk-des h2{
+        font-size: 30px;
+    }
+
+    .product-content .product-des .produk-des p{
+        font-size: 15px;
+    }
+
+    .product-content .product-des .produk-des li{
+        font-size: 15px;
+    }
+
+    .product-content img.granulated{
+        width: 250px;
+        height: auto;
+        margin-top: 30px;
+    }
+
+    .product-content img.block{
+        width: 250px;
+        height: auto;
+        margin-top: 30px;
+    }
+
+    .product-content .product-des .produk-des a img{
+        width: 50px;
+    }
+    .product-content .product-des .produk-des a{
+        font-size: 18px;
+    }
+    
+}

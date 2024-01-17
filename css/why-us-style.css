@@ -1,0 +1,1004 @@
+/* Font Freight Medium */
+@import url(https://db.onlinewebfonts.com/c/90fe831fa65b9632a4790c1a1732e9ab?family=FreightNeo+W03+Medium);
+
+/* Font Freight Light */
+
+@import url(https://db.onlinewebfonts.com/c/251dff4c8f7ab0a6f3258b61f6527ad5?family=FreightNeo+W03+Light);
+
+/* Font Freight Medium Italic */
+@import url(https://db.onlinewebfonts.com/c/ee4d865b795f326ff226bc0baaa2694c?family=FreightNeo+W03+Medium+Italic);
+
+/* Font Freight Medium Italic Light*/
+@import url(https://db.onlinewebfonts.com/c/01f250e37cc2465ba7178a3181078f59?family=FreightNeo+W03+Light+Italic);
+
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400&display=swap');
+
+/* tamil */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@300;400;500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Tamil:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+@font-face {
+    font-family: 'headline';
+    src:url('../font/PassionSansPDbi-SemiBoldSmallCaps.ttf.woff') format('woff'),
+        url('../font/PassionSansPDbi-SemiBoldSmallCaps.ttf.svg#PassionSansPDbi-SemiBoldSmallCaps') format('svg'),
+        url('../font/PassionSansPDbi-SemiBoldSmallCaps.ttf.eot'),
+        url('../font/PassionSansPDbi-SemiBoldSmallCaps.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: sourcesanspro;
+    src: url('font/SourceSansPro-ExtraLight.otf');
+}
+
+:root {
+    /* ====Main theme colors==== */
+    --first-color: #475D5B;
+    --second-color: #42B300;
+    --third-color: #FAAE2B;
+    --headline-color: #FA5246;
+
+    /* ====Hover colors==== */
+    --hover-color: #2cb67d;
+    --button-hover-color: #FFB534;
+
+    /* ====Background colors==== */
+    --body-bg-color: #fefefe;
+    --card-bg-color: #fff;
+    --modal-bg-color: #fff;
+    --bg-color: #F2F7F5;
+    --bg-transparent-color: rgba(0, 0, 0, 0.1);
+    --transparent-color-01: rgba(0, 0, 0, 0.1);
+    --transparent-color-02: rgba(106, 89, 209, 0.1);
+    --line-color: #d7d7d7;
+
+    /* ====Scroll-bar colors==== */
+    --scroll-bar-color: #c5cadf;
+    --scroll-thumb-color: #70768a;
+    --scroll-thumb-hover-color: #454f6b;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans 3', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: var(--first-color);
+    background: var(--body-bg-color);
+    margin: 2rem 0 0 0;
+    transition: .5s ease;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+
+/* Home-Why-us */
+
+.home-why{
+    width: 90%;
+    margin: 5%;
+    height: 80vh;
+    background-image: url(../img/why-us/cover.png);
+    background-size: cover;
+    position: relative;
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+    padding-top: 31.5vh;
+
+}
+
+.home-why::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    opacity: 0.2;
+}
+
+/* .home-why-text {
+    padding-top: 130px;
+} */
+
+.home-why-text h1 {
+    font-family: headline;
+    font-size: 4vw;
+    /* font-style:italic; */
+    color: var(--body-bg-color);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    letter-spacing: 5px;
+    padding-bottom: 10px;
+    opacity: 90%;
+}
+
+.home-why-text h2 {
+    font-family: 'Noto Sans Tamil', sans-serif;
+    font-weight: 500;
+    font-size: 2vw;
+    color: var(--body-bg-color);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    /* letter-spacing: 1px; */
+    opacity: 90%;
+    padding-bottom: 10px;
+}
+
+/* Harmony */
+.harmony {
+    width: 100%;
+    height: auto;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 0 8%;
+    background-color: var(--bg-color);
+    /* border: solid; */
+}
+
+.harmony-title{
+    padding-bottom: 50px;
+    border: solid;
+    width: 100%;
+    background-color: var(--title-bg-color) ;
+    background-attachment: fixed;    
+    height: 210px;
+    position: absolute;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 50px;
+    top: 0;
+}
+
+.harmony-title h2{
+    font-family: "FreightNeo W03 Medium";
+    font-weight: 300;
+    font-size: 2.8vw;
+    color: var(--modal-bg-color);
+    margin-top: 50px;
+}
+
+.harmony-title h1{
+    font-family: 'Noto Sans Tamil', sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 4.5vw;
+    margin-bottom: 5px;
+    color: var(--button-hover-color);
+}
+
+/* bagian 1 */
+.bagian-1{
+    width: 100%;
+    height: 56vw;
+    background-image: url(../img/why-us/bagian-1.png);
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2%;
+    padding: 5%;
+    /* margin: 5%; */
+}
+
+.bagian-1-cover{
+    width: 40%;
+    height: 100%;
+    position: relative; 
+    align-items: center;
+    justify-content: center;
+    float: right;
+    /* border: solid var(--bg-color); */
+    /* margin: 5%; */
+    border-radius: 15px;
+}
+
+.bagian-1-cover::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--modal-bg-color);
+    border-radius: 15px;
+    opacity: 0.3;
+}
+
+.bagian-text{
+    color: var(--modal-bg-color);
+    text-align: center;
+}
+.bagian-text-id{
+    color: var(--modal-bg-color);
+    text-align: center;
+}
+
+
+.bagian-text h1{
+    font-family: 'Noto Sans Tamil', sans-serif;
+    font-style: italic;
+    font-size: 2vw;
+    margin: 5vw 1vw 3vw;
+}
+
+.bagian-text-id h1{
+    font-family: 'Noto Sans Tamil', sans-serif;
+    font-style: italic;
+    font-size: 2vw;
+    margin: 5vw 1vw 3vw;
+}
+
+.bagian-text p{
+    font-family: "FreightNeo W03 Medium";
+    font-size: 2vw;
+    margin: 0 3.8vw 3vw;
+}
+
+.bagian-text-id p{
+    font-family: "FreightNeo W03 Medium";
+    font-size: 1.92vw;
+    margin: 0 3.8vw 3vw;
+}
+
+/* Bagian 2 */
+.bagian-2{
+    width: 100%;
+    height: 62vw;
+    background-attachment: fixed;
+    background-image: url(../img/why-us/bagian-2.png);
+    background-size: cover;
+    position: relativ;
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
+    /* margin: 5%; */
+}
+
+.bagian-2-cover{
+    width: 45%;
+    height: 100%;
+    position: relative; 
+    align-items: center;
+    justify-content: center;
+    float: left;
+    /* border: solid var(--bg-color); */
+    /* margin: 5%; */
+    border-radius: 15px;
+}
+
+.bagian-2-cover::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--modal-bg-color);
+    border-radius: 15px;
+    opacity: 0.3;
+}
+
+
+/* Bagian 3 */
+.bagian-3{
+    width: 100%;
+    height: 56vw;
+    background-attachment: fixed;
+    background-image: url(../img/why-us/bagian-3.png);
+    background-size: cover;
+    position: relativ;
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
+    /* margin: 5%; */
+}
+
+.bagian-3-cover{
+    width: 40%;
+    height: 100%;
+    position: relative; 
+    align-items: center;
+    justify-content: center;
+    float: right;
+    /* border: solid var(--bg-color); */
+    /* margin: 5%; */
+    border-radius: 15px;
+}
+
+.bagian-3-cover::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--modal-bg-color);
+    border-radius: 15px;
+    opacity: 0.3;
+}
+
+
+/* WHY PURE*/
+/* Harmony */
+.pure {
+    width: 100%;
+    height: auto;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 0 8%;
+    /* border: solid; */
+}
+
+.pure-title{
+    padding-bottom: 50px;
+    border: solid;
+    width: 100%;
+    background-color: var(--title-bg-color) ;    
+    height: 210px;
+    position: absolute;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 50px;
+    top: 0;
+}
+
+.pure-title h2{
+    font-family: "FreightNeo W03 Medium";
+    font-weight: 300;
+    font-size: 2.8vw;
+    margin-top: 50px;
+    color: var(--modal-bg-color);
+}
+
+.pure-title h1{
+    font-family: 'Noto Sans Tamil', sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 4.5vw;
+    margin-bottom: 5px;
+    color: var(--button-hover-color);
+}
+
+.kenapa{
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 45px;
+    background-color: var(--bg-color);
+    /* margin: 0 2%; */
+    /* border: solid; */
+    padding-bottom: 50px;
+}
+
+.kenapa-cart{
+    position: relative;
+    /* align-items: center; */
+    justify-content: center;
+    display: flex;
+    /* margin-bottom: 5vw; */
+    padding-top: 3vw;
+    /* border: solid; */
+}
+
+.kenapa-cart .cart{
+    /* border: 0.11vw solid var(--first-color); */
+    height: 42vw;
+    width: 25vw;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    margin: 0 2vw;
+    /* border: solid; */
+}
+
+/* .kenapa-cart .cart:not(:last-child){
+    margin-right: 5vw;
+} */
+
+.kenapa-cart .cart-img{
+    border: 0.11vw solid var(--first-color);
+    height: 39vw;
+    width: 25vw;
+    position: relative;
+    align-items: center;
+    /* justify-content: center; */
+    margin: 0 2vw;
+    /* border: SOLID; */
+    object-fit: cover;
+
+}
+
+.kenapa-cart .cart-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.kenapa-cart .cart h1.no{
+    font-family: 'Noto Serif Tamil', serif;
+    font-weight: 700;
+    font-size: 13vw;
+    font-style: italic;
+    opacity: 0.12;
+    position: absolute;
+    top: 14vw;
+    left: 5vw;
+}
+
+.kenapa-cart .cart img{
+    width: 7vw;
+}
+
+.kenapa-cart .cart img.gambar{
+    width: 5vw;
+}
+
+.kenapa-cart .cart h3{
+    font-family: 'Noto Sans Tamil', serif;
+    font-weight: 600;
+    font-size: 1.8vw; 
+    position: absolute;
+    top: 8vw;
+    margin: 0.2vw;
+}
+
+.kenapa-cart .cart .des{
+    font-family: "FreightNeo W03 Medium";
+    font-size: 1.5vw;
+    margin: 3vw 0.5vw ;
+    letter-spacing: 0.3px;
+    line-height: 2.5vw;
+    position: absolute;
+    top: 10.5vw;
+    text-align: justify;
+    /* border: solid; */
+}
+
+.kenapa-cart .cart .des p:not(:last-child){
+    margin-bottom: 2vw;
+}
+
+.kenapa-cart .cart-img-2{
+    /* border: 0.11vw solid var(--first-color); */
+    height: 39vw;
+    width: 25vw;
+    margin: 0 2vw;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.kenapa-cart .cart-img-2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+
+
+/* ID */
+.kenapa-cart-id{
+    position: relative;
+    /* align-items: center; */
+    justify-content: center;
+    display: flex;
+    /* margin-bottom: 5vw; */
+    padding-top: 5vw;
+    /* border: solid; */
+    margin-bottom: 5vw;
+}
+
+.kenapa-cart-id .cart{
+    /* border: 0.11vw solid var(--first-color); */
+    height: 42vw;
+    width: 25vw;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    margin: 0 2vw;
+    /* border: solid; */
+}
+
+/* .kenapa-cart .cart:not(:last-child){
+    margin-right: 5vw;
+} */
+
+.kenapa-cart-id .cart-img{
+    border: 0.11vw solid var(--first-color);
+    height: 43vw;
+    width: 25vw;
+    position: relative;
+    align-items: center;
+    /* justify-content: center; */
+    margin: 0 2vw;
+    /* border: SOLID; */
+    object-fit: cover;
+
+}
+
+.kenapa-cart-id .cart-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.kenapa-cart-id .cart h1.no{
+    font-family: 'Noto Serif Tamil', serif;
+    font-weight: 700;
+    font-size: 13vw;
+    font-style: italic;
+    opacity: 0.12;
+    position: absolute;
+    top: 14vw;
+    left: 5vw;
+}
+
+.kenapa-cart-id .cart img{
+    width: 7vw;
+}
+
+.kenapa-cart-id .cart img.gambar{
+    width: 5vw;
+}
+
+.kenapa-cart-id .cart h3{
+    font-family: 'Noto Sans Tamil', serif;
+    font-weight: 600;
+    font-size: 1.8vw; 
+    position: absolute;
+    top: 8vw;
+    margin: 0.2vw;
+}
+
+.kenapa-cart-id .cart .des{
+    font-family: "FreightNeo W03 Medium";
+    font-size: 1.5vw;
+    margin: 3vw 0.5vw ;
+    letter-spacing: 0.3px;
+    line-height: 2.5vw;
+    position: absolute;
+    top: 10.5vw;
+    text-align: justify;
+    /* border: solid; */
+}
+
+.kenapa-cart-id .cart .des p:not(:last-child){
+    margin-bottom: 2vw;
+}
+
+.kenapa-cart-id .cart-img-2{
+    /* border: 0.11vw solid var(--first-color); */
+    height: 42vw;
+    width: 25vw;
+    margin: 0 2vw;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.kenapa-cart-id .cart-img-2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Mission */
+.sus{
+    width: 100%;
+    height: auto;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    padding: 0 8%;
+    background-color: #fff;
+    /* border: solid; */
+}
+
+.sus .sus-content{
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.sus-title p.des{
+    font-family: "FreightNeo W03 Medium";
+    font-weight: 500;
+    font-size: 2.6vw;
+}
+
+.sus-title .title-sus{
+    /* display: flex; */
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    margin-top: 3vw;
+    margin-bottom: 1vw;
+} 
+
+.sus-title .title-sus p{
+    font-family: "FreightNeo W03 Medium";
+    font-size: 3vw;
+    margin-right: 10px;
+}
+
+.sus-title .title-sus p.color{
+    color: var(--third-color);
+}
+
+.sus-cart{
+    display: flex;
+}
+
+.sus-cart .cart{
+    border: 0.11vw solid var(--first-color);
+    margin: 1vw;
+    height: auto;
+    padding: 1%;
+    width: 25vw;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.cart p.no{
+    font-family: "FreightNeo W03 Medium";
+    font-size: 3vw;
+    text-align: left;
+    font-style: italic;
+    margin-bottom: 3.8vw;
+    color: var(--third-color);
+}
+
+.cart p.no-4{
+    font-family: "FreightNeo W03 Medium";
+    font-size: 3vw;
+    text-align: left;
+    font-style: italic;
+    margin-bottom: 1.3vw;
+    color: var(--third-color);
+}
+
+.cart h3{
+    font-family: "FreightNeo W03 Medium";
+    font-size: 2vw;
+    text-align: left;
+    font-style: italic;
+    margin-bottom: 1vw;
+}
+
+
+.cart hr{
+    height: 0.25vw;
+    background-color: var(--first-color);
+    margin-bottom: 4vw;
+}
+
+.cart p.des{
+    font-family: "FreightNeo W03 Medium";
+    font-size: 1.5vw;
+    text-align: left;
+    margin-bottom: 4vw;
+}
+
+.cart p.des-id{
+    font-family: "FreightNeo W03 Medium";
+    font-size: 1.5vw;
+    margin-bottom: 3vw;
+    text-align: left;
+}
+
+@media only screen and (max-width: 600px){
+    .home-why-text h1{
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .home-why-text h2{
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .harmony-title{
+        width: 100%;
+        height: 160px;
+        background-color: var(--first-color);
+    }
+
+    .harmony-title h2{
+        font-size: 2opx;
+        margin-top: 30px;
+    }
+    
+    .harmony-title h1{
+        font-size: 28px;
+    }
+
+    .bagian-1{
+        height: 420px;
+    }
+
+    .bagian-1-cover{
+        width: 70%;
+    }
+    .bagian-text h1{
+        font-family: 'Noto Sans Tamil', sans-serif;
+        font-style: italic;
+        font-size: 20px;
+        margin: 5vw 1vw 3vw;
+    }
+
+    .bagian-text-id h1{
+        font-family: 'Noto Sans Tamil', sans-serif;
+        font-style: italic;
+        font-size: 20px;
+        margin: 5vw 1vw 3vw;
+    }
+
+    .bagian-text p{
+        font-family: "FreightNeo W03 Medium";
+        font-size: 18px;
+        margin: 0 3.8vw 3vw;
+    }
+
+    .bagian-text-id p{
+        font-family: "FreightNeo W03 Medium";
+        font-size: 16px;
+        margin: 0 3.8vw 3vw;
+    }
+
+    .bagian-2{
+        height: 510px;
+    }
+
+    .bagian-2-cover{
+        width: 70%;
+    }
+
+
+    .bagian-3{
+        height: 400px;
+    }
+
+    .bagian-3.id{
+        height: 440px;
+    }
+
+    .bagian-3-cover{
+        width: 70%;
+    }
+
+    .pure-title{
+        width: 100%;
+        height: 120px;
+        background-color: var(--first-color);
+    }
+
+    .pure-title h2{
+        font-size: 15px;
+        margin-top: 30px;
+    }
+    
+    .pure-title h1{
+        font-size: 28px;
+    }
+
+    .kenapa-cart{
+        position: relative;
+        /* align-items: center; */
+        justify-content: center;
+        display: flex;
+        /* margin-bottom: 5vw; */
+        padding-top: 3vw;
+        /* border: solid; */
+    }
+
+    .kenapa-cart .cart{
+        /* border: 0.11vw solid var(--first-color); */
+        height: 48vw;
+        width: 130px;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        margin: 0 2vw;
+        /* border: solid; */
+    }
+
+    .kenapa-cart-id .cart{
+        /* border: 0.11vw solid var(--first-color); */
+        height: 48vw;
+        width: 130px;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        margin: 0 2vw;
+        /* border: solid; */
+    }
+
+
+    .kenapa-cart .cart-img{
+        border: 0.11vw solid var(--first-color);
+        height: 48vw;
+        width: 130px;
+        position: relative;
+        align-items: center;
+        /* justify-content: center; */
+        margin: 0 2vw;
+        /* border: SOLID; */
+        object-fit: cover;
+    }
+
+    .kenapa-cart-id .cart-img{
+        border: 0.11vw solid var(--first-color);
+        height: 58vw;
+        width: 130px;
+        position: relative;
+        align-items: center;
+        /* justify-content: center; */
+        margin: 0 2vw;
+        /* border: SOLID; */
+        object-fit: cover;
+    }
+
+    .kenapa-cart .cart-img-2{
+        /* border: 0.11vw solid var(--first-color); */
+        height: 48vw;
+        width: 130px;
+        margin: 0 2vw;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .kenapa-cart-id .cart-img-2{
+        /* border: 0.11vw solid var(--first-color); */
+        height: 50vw;
+        width: 130px;
+        margin: 0 2vw;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .kenapa-cart .cart .des{
+        font-size: 10px;
+    }
+    
+    .kenapa-cart-id .cart .des{
+        font-size: 10px;
+    }
+
+    .kenapa-cart .cart h3{
+        font-family: 'Noto Sans Tamil', serif;
+        font-weight: 600;
+        font-size: 2vw; 
+        position: absolute;
+        top: 8vw;
+        margin: 0.2vw;
+    }
+
+    .kenapa-cart-id .cart h3{
+        font-family: 'Noto Sans Tamil', serif;
+        font-weight: 600;
+        font-size: 2vw; 
+        position: absolute;
+        top: 8vw;
+        margin: 0.2vw;
+    }
+
+    .sus{
+        width: 100%;
+        height: auto;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        padding: 0 3%;
+        background-color: #fff;
+        /* border: solid; */
+    }
+
+    .sus-title p.des{
+        font-family: "FreightNeo W03 Medium";
+        font-weight: 500;
+        font-size: 5vw;
+        /* border: solid; */
+    }
+    .sus-title .title-sus p{
+        font-family: "FreightNeo W03 Medium";
+        font-size: 4.5vw;
+        margin-right: 10px;
+    }
+
+    .cart p.no{
+        font-family: "FreightNeo W03 Medium";
+        font-size: 4vw;
+        text-align: left;
+        font-style: italic;
+        margin-bottom: 1.3vw;
+        color: var(--third-color);
+    }
+
+    .cart p.no.n02{
+        margin-bottom: 5.4vw;
+    }
+
+    .cart p.no-4{
+        font-family: "FreightNeo W03 Medium";
+        font-size: 4vw;
+        text-align: left;
+        font-style: italic;
+        margin-bottom: 1.3vw;
+        color: var(--third-color);
+    }
+
+    .cart p.no-4.id{
+        margin-bottom: 5.4vw;
+        /* border: solid; */
+    }
+
+    .cart p.no{
+        margin-bottom: 5.4vw;
+    }
+
+    .cart h3.id{
+        font-family: "FreightNeo W03 Medium";
+        font-size: 3vw;
+        text-align: left;
+        font-style: italic;
+        margin-bottom: 5vw;
+    }
+    
+    .cart h3{
+        font-family: "FreightNeo W03 Medium";
+        font-size: 3vw;
+        text-align: left;
+        font-style: italic;
+        margin-bottom: 1vw;
+    }
+
+    .cart p.des{
+        font-family: "FreightNeo W03 Medium";
+        font-size: 2.5vw;
+        text-align: left;
+        margin-bottom: 4vw;
+    }
+
+    .cart p.des-id{
+        font-family: "FreightNeo W03 Medium";
+        font-size: 2.5vw;
+        text-align: left;
+        margin-bottom: 4vw;
+    }
+}

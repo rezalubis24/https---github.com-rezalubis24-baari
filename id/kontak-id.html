@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KONTAK | BAARI PALM SUGAR</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/about-style.css">
+    <link rel="stylesheet" href="../css/contact-style.css">
+    <link rel="stylesheet" href="../css/product-style.css">
+    <link rel="stylesheet" href="../css/why-us-style.css">
+    <link rel="icon" href="../img/icon.png" alt="Baari Palm Sugar Logo">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+
+<body>
+    <header id="mainHeader">
+        <a href="home-id.html" class="logo">
+            <img src="../img/LOGO.png" alt="Baari Palm Sugar Logo">
+        </a>
+
+        <ul class="navbar">
+            <li><a href="home-id.html">Beranda</a></li>
+            <li><a href="about-id.html">Tentang</a></li>
+            <li class="id"><a href="why-us-id.html">Kenapa Kami</a></li>
+            <li><a href="product-id.html">Produk</a></li>
+            <li><a href="kontak-id.html">Kontak</a></li>
+        </ul>
+        <!-- bahasa -->
+        <div class="custom-dropdown" id="customDropdown" onclick=" toggleDropdown(), rotateIcon() ">
+            <div class="custom-dropdown-select">
+                <img src="../img/svg/indonesia.svg">
+                ID
+                <i class="fa-solid fa-caret-down icon" ></i>
+            </div>
+            <div class="custom-dropdown-options" id="dropdownOptions">
+                <div class="custom-dropdown-option" onclick="selectOption('../contact.html')">
+                    <img src="../img/svg/uk.svg" alt="Option 1"> English
+                </div>
+            </div>
+        </div>
+
+        <div class="h-icons">
+            <i class="fa-solid fa-bars" id="menu-icon"></i>
+        </div>
+    </header>
+
+    <!-- whatsapp -->
+    <div class="logo-w">
+        <a href="https://wa.me/+6285296672800?text=Halo%20Saya%20Ingin%20Bertanya%20Mengenai%20Baari%20Palm%20Sugar%0ANama%20:%0AEmail%20:" target="_blank"><img
+                src="../img/whatsapp.png" alt=""></a>
+    </div>
+
+
+
+    <!-- HOME||product Section -->
+    <section class="home-contact" id="home-contact">
+        <div class="home-contact-text">
+            <h1>HUBUNGI KAMI</h1>
+            <h2>Bagaimana kami dapat memberikan produk premium yang sesuai dengan kebutuhan Anda.</h2>
+        </div>
+    </section>
+
+    <!-- Contact des -->
+    <section class="contact-des revealT">
+        <p class="contact-text">Siap untuk membawa cita rasa gula kelapa organik Indonesia ke meja Anda? Kami siap
+            membantu Anda di setiap langkahnya. Jika Anda membutuhkan informasi lebih lanjut mengenai produk kami atau
+            hanya ingin mempelajari lebih lanjut mengenai misi dan praktik-praktik berkelanjutan kami, tim kami yang
+            berdedikasi di Baari Palm Sugar siap membantu Anda.</p>
+    </section>
+
+
+    <!-- Contact add & form-->
+    <section class="contact-adf">
+        <div class="contact-add">
+            <div class="add revealR">
+                <h1>Lokasi</h1>
+                <div class="des">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p>Jl. Puri No.167 Medan, Indonesia 20215</p>
+                </div>
+            </div>
+            <div class="add revealT">
+                <h1>Email</h1>
+                <div class="des">
+                    <i class="fa-solid fa-envelope"></i>
+                    <p>iqbal@baaripalmsugar.com</p>
+                </div>
+            </div>
+            <div class="add revealR">
+                <h1>Phone</h1>
+                <div class="des">
+                    <i class="fa-solid fa-phone"></i>
+                    <p>+62 8529 6672 800</p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <form target="_blank" action="https://formsubmit.co/iqbal@baaripalmsugar.com" method="POST">
+                <div class="form-group">    
+                    <div class="form-row">
+                        <div class="col">
+                            <input type="text" name="name" class="form-control revealT" placeholder="Full Name" required>
+                        </div>
+                        <div class="col">
+                            <input type="company" name="company" class="form-control revealT" placeholder="Company" required>
+                        </div>
+                        <div class="col">
+                            <input type="email" name="email" class="form-control revealT" placeholder="Email Address" required>
+                        </div>
+                        <div class="col">
+                            <input type="subject" name="subject" class="form-control revealT" placeholder="Subject" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Your Message" class="form-control revealT" name="message" rows="10"
+                        required></textarea>
+                </div>
+                <button type="submit" class="btn btn-lg btn-dark btn-block revealT">Send Message</button>
+            </form>
+        </div>
+    </section>
+    <section class="maps">
+        <iframe class="map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3982.04125035693!2d98.69178507416137!3d3.577994296396177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30313052fc6434b3%3A0x8144a1491d6640a2!2sJl.%20Puri%2C%20Kota%20Medan%2C%20Sumatera%20Utara!5e0!3m2!1sid!2sid!4v1703647403932!5m2!1sid!2sid"
+            width="100%" height="280" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <section class="bagian-footer">
+            <div class="footer-des">
+                <img src="../img/LOGO-removebg.png" alt="Baari Palm Sugar Logo">
+                <p>Kami menghadirkan rasa manis ke setiap sudut di PT Baari Palm Sugar. Kami bangga untuk melestarikan dan berbagi
+                    manisnya alam bersama dunia melalui Gula Aren premium kami.</p>
+            </div>
+
+            <div class="footer-k">
+                <div class="footer-nav">
+                    <li><a href="../id/home-id.html">Beranda</a></li>
+                    <li><a href="../id/about-id.html">Tentang</a></li>
+                    <li><a href="../id/why-us-id.html">Kenapa Kami</a></li>
+                    <li><a href="../id/product-id.html">Produk</a></li>
+                    <li><a href="../id/kontak-id.html">Kontak</a></li>
+                </div>
+                <div class="footer-contact">
+                    <p class="text">Hubungi Kami</p>
+                    <div class="fc">
+                        <i class="fa-solid fa-envelope"></i>
+                        <p>iqbal@baaripalmsugar.com</p>
+                    </div>
+                    <div class="fc">
+                        <i class="fa-solid fa-phone"></i>
+                        <p><a
+                                href="https://wa.me/+6285296672800?text=Hello%20I%20would%20like%20to%20ask%20about%20Baari%20Palm%20Sugar.%0AName%20:%0AEmail%20:">+62
+                                852 9667 2800</a></p>
+                    </div>
+                    <div class="fc">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Jl. Puri No.167 Medan, Indonesia 20215</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </footer>
+    <script src="../js/main.js"></script>
+
+
+</body>
+
+</html>

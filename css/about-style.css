@@ -1,0 +1,895 @@
+/* Font Freight Medium */
+@import url(https://db.onlinewebfonts.com/c/90fe831fa65b9632a4790c1a1732e9ab?family=FreightNeo+W03+Medium);
+
+/* Font Freight Light */
+
+@import url(https://db.onlinewebfonts.com/c/251dff4c8f7ab0a6f3258b61f6527ad5?family=FreightNeo+W03+Light);
+
+/* Font Freight Medium Italic */
+@import url(https://db.onlinewebfonts.com/c/ee4d865b795f326ff226bc0baaa2694c?family=FreightNeo+W03+Medium+Italic);
+
+/* Font Freight Medium Italic Light*/
+@import url(https://db.onlinewebfonts.com/c/01f250e37cc2465ba7178a3181078f59?family=FreightNeo+W03+Light+Italic);
+
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400&display=swap');
+
+/* tamil */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@300;400;500&display=swap');
+
+
+
+@font-face {
+    font-family: 'headline';
+    src:url('../font/PassionSansPDbi-SemiBoldSmallCaps.ttf.woff') format('woff'),
+        url('../font/PassionSansPDbi-SemiBoldSmallCaps.ttf.svg#PassionSansPDbi-SemiBoldSmallCaps') format('svg'),
+        url('../font/PassionSansPDbi-SemiBoldSmallCaps.ttf.eot'),
+        url('../font/PassionSansPDbi-SemiBoldSmallCaps.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: sourcesanspro;
+    src: url('font/SourceSansPro-ExtraLight.otf');
+}
+
+:root {
+    /* ====Main theme colors==== */
+    --first-color: #475D5B;
+    --second-color: #42B300;
+    --third-color: #FAAE2B;
+    --headline-color: #FA5246;
+
+    /* ====Hover colors==== */
+    --hover-color: #2cb67d;
+    --button-hover-color: #FFB534;
+
+    /* ====Background colors==== */
+    --body-bg-color: #fefefe;
+    --card-bg-color: #fff;
+    --modal-bg-color: #fff;
+    --bg-color: #F2F7F5;
+    --bg-transparent-color: rgba(0, 0, 0, 0.1);
+    --transparent-color-01: rgba(0, 0, 0, 0.1);
+    --transparent-color-02: rgba(106, 89, 209, 0.1);
+    --line-color: #d7d7d7;
+
+    /* ====Scroll-bar colors==== */
+    --scroll-bar-color: #c5cadf;
+    --scroll-thumb-color: #70768a;
+    --scroll-thumb-hover-color: #454f6b;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans 3', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: var(--first-color);
+    background: var(--body-bg-color);
+    margin: 2rem 0 0 0;
+    transition: .5s ease;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.home-about {
+    width: 90%;
+    height: 80vh;
+    background-image: url(../img/about/cover.jpg);
+    background-size: cover;
+    position: relative;
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+    padding-top: 31.5vh;
+    margin: 5% 5% 0 5%;
+}
+
+.home-about-text {
+        /* padding-top: 210px;   */
+        /* padding-top: 40vh; */
+        position: relative;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        /* border: solid; */
+}
+
+.home-about-text h1 {
+    font-family: headline;
+    font-size: 53px;
+    /* font-style:italic; */
+    color: var(--body-bg-color);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    letter-spacing: 5px;
+    padding-bottom: 10px;
+    opacity: 90%;
+}
+
+.home-about-text h2 {
+    font-family: 'Noto Sans Tamil', sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    color: var(--body-bg-color);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    /* letter-spacing: 1px; */
+    opacity: 90%;
+    padding-bottom: 10px;
+}
+
+
+/* GLANCE SECTION */
+.about-glance {
+    width: 100%;
+    height: auto;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 8%;
+    background-color: #fff;
+    /* border: solid; */
+}
+
+.glance-content {
+    display: flex;
+    position: relative;
+    justify-items: center;
+    /* border: solid; */
+}
+
+.glance-content .glance-data {
+    width: 2700px;
+    margin-right: 100px;
+    /* border: solid; */
+}
+
+.glance-data .g-data:not(:last-child) {
+    margin-bottom: 25px;
+}
+
+.glance-data .g-data p {
+    color: var(--button-hover-color);
+    place-items: center;
+    font-weight: 600;
+    font-size: 40px;
+    font-family: "FreightNeo W03 Light Italic";
+    color: var(--headline-color);
+    margin-bottom: 10px;
+}
+
+.glance-data .g-data span.num1 {
+    font-family: "FreightNeo W03 Light Italic";
+    font-size: 60px;
+}
+
+.glance-data .g-data span.num {
+    font-family: "FreightNeo W03 Light Italic";
+    font-size: 60px;
+}
+
+.glance-data .g-data span.text {
+    font-family: "FreightNeo W03 Medium";
+    font-size: 20px;
+}
+
+.glance-des p.title {
+    font-family: "FreightNeo W03 Medium";
+    font-size: 55px;
+    /* margin-top: 30px; */
+    color: var(--first-color);
+    /* border:solid; */
+}
+
+.glance-des p {
+    font-family: "FreightNeo W03 Medium";
+    font-size: 32px;
+    font-weight: 300;
+    margin-top: 30px;
+    color: var(--first-color);
+    text-align: justify;
+    /* line-height: 43px; */
+}
+
+
+
+/* ABOUT CONTENT */
+.about-des {
+    width: 100%;
+    height: auto;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 6%;
+    background-color: #fff;
+}
+
+.about-des-content {
+    width: 100%;
+    height: auto;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding-top: 20px;
+}
+
+.about-des-content img {
+    width: 650px;
+    border-radius: 10px;
+}
+
+.about-des-isi-content {
+    padding-left: 45px;
+}
+
+.about-des-isi-content h2 {
+    font-family: 'Crimson Pro', serif;
+    font-weight: 300;
+    font-size: 21px;
+    letter-spacing: 0.5px;
+    font-style: italic;
+    margin-bottom: 13px;
+}
+
+.about-des-isi-content h1 {
+    font-family: "FreightNeo W03 Medium";
+    font-weight: 500;
+    font-size: 35px;
+    margin-bottom: 3px;
+}
+
+.about-des-isi-content hr {
+    width: 70px;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    background: var(--hover-color);
+}
+
+.about-des-isi-content p {
+    font-family: 'Source Sans 3', sans-serif;
+    margin-top: 30px;
+    font-weight: 300;
+    font-size: 15px;
+    letter-spacing: 0.6px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+/* Our Value */
+
+.our-value {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--bg-color);
+}
+
+.our-value::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(../img/bg2.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: 400px;
+    opacity: 0.08;
+
+}
+
+.value-content {
+    text-align: left;
+    max-width: 60%;
+    /* Sesuaikan dengan kebutuhan Anda */
+    margin-left: 8vw;
+    margin-right: 30px;
+}
+
+.value-title {
+    display: flex;
+}
+
+.value-title p {
+    font-family: "FreightNeo W03 Medium";
+    margin-right: 10px;
+    font-weight: 500;
+    font-size: 5vw;
+}
+
+.value-title p.color {
+    color: var(--third-color);
+}
+
+.value-des {
+    width: 30vw;
+    margin-bottom: 20px;
+    /* Sesuaikan dengan kebutuhan Anda */
+    /* border: solid; */
+}
+
+.value-des hr {
+    width: 8vw;
+    height: 2px;
+    background-color: var(--first-color);
+}
+
+
+.value-des p.des {
+    font-family: "FreightNeo W03 Medium";
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 2vw;
+}
+
+img.value{
+    max-width: 50%;
+    min-width: 50%;
+    height: auto;
+}
+
+
+/* Our Vision */
+
+.our-vision {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: var(--bg-color);
+}
+
+.our-vision::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(../img/bg1.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 400px;
+    opacity: 0.08;
+
+}
+
+.vision-content {
+    /* text-align: left; */
+    max-width: 60%;
+    margin-left: 8vw;
+    /* border: solid; */
+}
+
+.vision-title {
+    display: flex;
+}
+
+.vision-title p {
+    font-family: "FreightNeo W03 Medium";
+    margin-right: 10px;
+    font-weight: 500;
+    font-size: 5vw;
+}
+
+.vision-title p.color {
+    color: var(--third-color);
+}
+
+.vision-des {
+    width: 35vw;
+    margin-bottom: 20px;
+}
+
+.vision-des hr {
+    width: 8vw;
+    height: 2px;
+    background-color: var(--first-color);
+}
+
+
+.vision-des p.des {
+    font-family: "FreightNeo W03 Medium";
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 2vw;
+}
+img.vision{
+    min-width: 50%;
+    max-width: 50%;
+    height: auto;
+}
+
+
+/* Mission */
+.mission {
+    width: 100%;
+    height: auto;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 8%;
+    background-color: #fff;
+    /* border: solid; */
+}
+
+.mission .mission-content{
+    position: relative;
+    text-align: center;
+    justify-content: center;
+}
+
+.mission-title p.des{
+    font-family: "FreightNeo W03 Medium";
+    font-weight: 500;
+    font-size: 2.6vw;
+}
+
+.mission-title .title{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    margin-top: 3vw;
+    margin-bottom: 1vw;
+} 
+
+.mission-title .title p{
+    font-family: "FreightNeo W03 Medium";
+    font-size: 5vw;
+    margin-right: 10px;
+}
+
+.mission-title .title p.color{
+    color: var(--third-color);
+}
+
+.mission-cart{
+    display: flex;
+    /* border: solid; */
+}
+
+.mission-cart .cart{
+    border: 0.11vw solid var(--first-color);
+    margin: 1vw;
+    height: 35vw;
+    padding: 1%;
+    width: 25vw;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.cart p.no{
+    font-family: "FreightNeo W03 Medium";
+    font-size: 3vw;
+    text-align: left;
+    font-style: italic;
+    margin-bottom: 3.8vw;
+    color: var(--third-color);
+    /* border: solid; */
+}
+
+.cart p.no-id{
+    font-family: "FreightNeo W03 Medium";
+    font-size: 3vw;
+    text-align: left;
+    font-style: italic;
+    margin-bottom: 0.6vw;
+    color: var(--third-color);
+}
+
+.cart h3{
+    font-family: "FreightNeo W03 Medium";
+    font-size: 2.4vw;
+    text-align: left;
+    font-style: italic;
+    margin-bottom: 1vw;
+}
+
+.cart hr{
+    height: 0.25vw;
+    background-color: var(--first-color);
+    margin-bottom: 4vw;
+}
+
+.cart p.des{
+    font-family: "FreightNeo W03 Medium";
+    font-size: 1.5vw;
+    text-align: left;
+}
+
+
+/* GAleri */
+.galeri {
+    width: 100%;
+    height: auto;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    background-color: #fff;
+    /* border: solid; */
+}
+
+.galeri .galeri-content{
+    position: relative;
+    text-align: center;
+    justify-content: center;
+}
+
+.galeri-content .galeri-title {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    padding: 30px 0;
+    background-color: var(--first-color);
+} 
+
+.galeri-content .galeri-title h1{
+    font-family: "FreightNeo W03 Medium";
+    /* font-family: 'Noto Sans Tamil', sans-serif; */
+    /* font-style: italic; */
+    font-weight: 500;
+    font-size: 5vw;
+    color: var(--third-color);
+}
+
+
+
+/* PRODUCTS */
+.product {
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+
+  }
+  
+  .product-container {
+    padding: 0 10vw;
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+  
+  .product-container::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .product-card {
+    flex: 0 0 auto;
+    width: 260px;
+    height: 200px;
+    margin-right: 40px;
+  }
+  
+  .product-image {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+    box-shadow: 0 1px 6px 0 rgb(32 33 36/80% );
+    overflow: hidden;
+  }
+  
+  .product-thumb {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+
+  
+  .pre-btn,
+  .nxt-btn {
+    border: none;
+    width: 10vw;
+    height: 50%;
+    position: absolute;
+    top: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
+    cursor: pointer;
+    z-index: 8;
+  }
+  
+  .pre-btn {
+    left: 0;
+    transform: rotate(180deg);
+  }
+  
+  .nxt-btn {
+    right: 0;
+  }
+  
+  .pre-btn img,
+  .nxt-btn img {
+    opacity: 0.2;
+  }
+  
+  .pre-btn:hover img,
+  .nxt-btn:hover img {
+    opacity: 1;
+  }
+
+
+
+  #lightbox {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .8);
+    display: none;
+  }
+  
+  #lightbox.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #lightbox img {
+    max-width: 90%;
+    max-height: 80%;
+    padding: 4px;
+    background-color: black;
+    border: 2px solid white;
+  }
+
+
+@media only screen and (max-width: 600px){
+    .home-about-text h1{
+        font-size: 30px;
+    }
+
+    .home-about-text h2{
+        font-size: 20px;
+    }
+
+
+    /* glance */
+    .about-glance {
+        width: 100%;
+        height: auto;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        padding: 60px 3% 0;
+        background-color: #fff;
+        /* border: solid; */
+    }
+    .glance-content .glance-data {
+        width: 45%;
+        margin-right: 30px;
+        /* border: solid; */
+    }
+
+
+    .glance-data .g-data{
+        /* border: solid; */
+        justify-content: center;
+        text-align: center;
+    }
+
+    .glance-data .g-data p{
+        /* border: solid; */
+        font-size: 30px;
+        width: 150px;
+    }
+    .glance-data .g-data span.num1 {
+        font-size: 30px;
+    }
+
+    .glance-data .g-data span.num {
+        font-size: 30px;
+    }
+    .glance-data .g-data span.text {
+        font-size: 15px;
+    }
+
+    .glance-des p.title {
+        font-size: 35px;
+        /* margin-top: 20px; */
+        /* border: solid; */
+    }
+    
+    .glance-des p {
+        font-family: 'Source Sans 3', sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        margin-top: 30px;
+        text-align: justify;
+        line-height: 1.8;
+    }
+
+    .about-des-content {
+        width: 100%;
+        height: auto;
+        flex-wrap: wrap;
+        padding-top: 20px;
+    }
+
+    .about-des-content img {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .about-des-isi-content {
+        padding-left: 0;
+    }
+
+    .our-value::before{
+        background-size: 200px;
+    }
+
+    .value-content {
+        text-align: left;
+        max-width: 50%;
+        /* Sesuaikan dengan kebutuhan Anda */
+        margin-left: 5vw;
+        margin-right: 30px;
+    }
+
+    img.value{
+        max-width: 50%;
+        min-width: 50%;
+        height: 60vh;
+        object-fit: cover;
+        /* background-attachment: fixed; */
+        
+    }
+    .value-title p {
+        font-family: "FreightNeo W03 Medium";
+        margin-right: 10px;
+        font-weight: 500;
+        font-size: 8vw;
+    }
+
+    .value-des p.des {
+        font-family: "FreightNeo W03 Medium";
+        margin-top: 20px;
+        font-weight: 500;
+        font-size: 3vw;
+    }
+
+
+    /* VISSIOIN */
+    .our-vision::before{
+        background-size: 200px;
+    }
+
+    .value-content {
+        /* text-align: left; */
+        max-width: 50%;
+        /* Sesuaikan dengan kebutuhan Anda */
+        margin-left: 5vw;
+        margin-right: 30px;
+    }
+
+    img.vision{
+        max-width: 50%;
+        min-width: 50%;
+        height: 70vh;
+        object-fit: cover;
+        /* background-attachment: fixed; */
+        
+    }
+    .vision-title p {
+        font-family: "FreightNeo W03 Medium";
+        margin-right: 10px;
+        font-weight: 500;
+        font-size: 8vw;
+    }
+
+    .vision-des p.des {
+        font-family: "FreightNeo W03 Medium";
+        margin-top: 20px;
+        font-weight: 500;
+        font-size: 3vw;
+    }
+
+    .mission-title p.des{
+        font-family: "FreightNeo W03 Medium";
+        font-weight: 500;
+        font-size: 20px;
+    }
+
+    .mission-title .title p{
+        font-family: "FreightNeo W03 Medium";
+        font-size: 25px;
+        margin-right: 10px;
+    }
+
+    .mission {
+        width: 100%;
+        height: auto;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        padding: 60px 3%;
+        background-color: #fff;
+        /* display: flex; */
+        flex-wrap: wrap;
+        /* border: solid; */
+    }
+/* 
+    .mission-cart{
+        border: solid red;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    } */
+
+    .mission-cart .cart{
+        border: 0.11vw solid var(--first-color);
+        margin: 2vw;
+        height: auto;
+        padding: 1%;
+        width: 100%;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .product-card {
+        flex: 0 0 auto;
+        width: 200px;
+        height: 140px;
+        margin-right: 40px;
+      }
+
+    .mission-cart .cart p.n02{
+        margin-bottom: 5.4vw;
+        /* border: solid; */
+    }
+
+    .mission-cart .cart p.no{
+        font-family: "FreightNeo W03 Medium";
+        font-size: 3vw;
+        text-align: left;
+        font-style: italic;
+        margin-bottom: 1.6vw;
+        color: var(--third-color);
+        /* border: solid; */
+    }
+
+    .mission-cart .cart h3.tit{
+        font-size: 13px;
+        margin-bottom: 2vw;
+        margin-top: 6vw;
+    }
+
+
+
+
+
+}

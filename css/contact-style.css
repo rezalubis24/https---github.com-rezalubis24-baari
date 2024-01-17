@@ -1,0 +1,388 @@
+/* Font Freight Medium */
+@import url(https://db.onlinewebfonts.com/c/90fe831fa65b9632a4790c1a1732e9ab?family=FreightNeo+W03+Medium);
+
+/* Font Freight Light */
+
+@import url(https://db.onlinewebfonts.com/c/251dff4c8f7ab0a6f3258b61f6527ad5?family=FreightNeo+W03+Light);
+
+/* Font Freight Medium Italic */
+@import url(https://db.onlinewebfonts.com/c/ee4d865b795f326ff226bc0baaa2694c?family=FreightNeo+W03+Medium+Italic);
+
+/* Font Freight Medium Italic Light*/
+@import url(https://db.onlinewebfonts.com/c/01f250e37cc2465ba7178a3181078f59?family=FreightNeo+W03+Light+Italic);
+
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400&display=swap');
+
+/* tamil */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@100;200;300;400;500;600;700;800&family=Noto+Serif+Tamil:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Tamil:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+@font-face {
+    font-family: 'headline';
+    src:url('../font/PassionSansPDbi-SemiBoldSmallCaps.ttf.woff') format('woff'),
+        url('../font/PassionSansPDbi-SemiBoldSmallCaps.ttf.svg#PassionSansPDbi-SemiBoldSmallCaps') format('svg'),
+        url('../font/PassionSansPDbi-SemiBoldSmallCaps.ttf.eot'),
+        url('../font/PassionSansPDbi-SemiBoldSmallCaps.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: sourcesanspro;
+    src: url('font/SourceSansPro-ExtraLight.otf');
+}
+
+:root {
+    /* ====Main theme colors==== */
+    --first-color: #475D5B;
+    --second-color: #42B300;
+    --third-color: #FAAE2B;
+    --headline-color: #FA5246;
+
+    /* ====Hover colors==== */
+    --hover-color: #2cb67d;
+    --button-hover-color: #FFB534;
+
+    /* ====Background colors==== */
+    --body-bg-color: #fefefe;
+    --card-bg-color: #fff;
+    --modal-bg-color: #fff;
+    --bg-color: #F2F7F5;
+    --bg-transparent-color: rgba(0, 0, 0, 0.1);
+    --transparent-color-01: rgba(0, 0, 0, 0.1);
+    --transparent-color-02: rgba(106, 89, 209, 0.1);
+    --line-color: #d7d7d7;
+
+    /* ====Scroll-bar colors==== */
+    --scroll-bar-color: #c5cadf;
+    --scroll-thumb-color: #70768a;
+    --scroll-thumb-hover-color: #454f6b;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans 3', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: var(--first-color);
+    background: var(--body-bg-color);
+    margin: 2rem 0 0 0;
+    transition: .5s ease;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+
+/* Home-Why-us */
+
+.home-contact{
+    width: 90%;
+    margin: 5%;
+    height: 80vh;
+    background-image: url(../img/contact/cover.jpg);
+    background-size: cover;
+    position: relativ;
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+    padding-top: 31.5vh;
+
+}
+
+/* .home-contact-text {
+    padding-top: 130px;
+} */
+
+.home-contact-text h1 {
+    font-family: headline;
+    font-size: 4vw;
+    /* font-style:italic; */
+    color: var(--body-bg-color);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    letter-spacing: 5px;
+    padding-bottom: 10px;
+    opacity: 90%;
+}
+
+.home-contact-text h2 {
+    /* width: 50%; */
+    font-family: 'Noto Sans Tamil', sans-serif;
+    font-weight: 500;
+    font-size: 1.8vw;
+    color: var(--body-bg-color);
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    line-height: 2.5vw;
+    opacity: 90%;
+    padding-bottom: 10px;
+}
+
+/* Contact DES */
+.contact-des{
+    width: 100%;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5%;
+    text-align: center;
+    /* border: solid; */
+}
+
+.contact-des p.contact-text{
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    font-family: "FreightNeo W03 Medium";
+    font-size: 2.1vw;
+    margin-left: 10%;
+    width: 80%;
+}
+
+
+.contact-adf{
+    width: 90%;
+    margin: 5%;
+    position: relative;
+    /* align-items: center; */
+    justify-content: center;
+    display: flex;
+    /* border: solid; */
+}
+
+.contact-adf .contact-add{
+    width: 40vw;
+    /* border: solid; */
+    margin-right: 8vw;
+    /* justify-content: center; */
+    /* border: solid; */
+}
+
+.contact-add .add:not(:last-child){
+    margin-bottom: 2.5vw;
+}
+
+.contact-add .add h1{
+    font-family: 'Noto Sans Tamil', serif;
+    font-weight: 500;
+    font-size: 2.1vw;
+    /* font-style: italic; */
+    color: var(--third-color);
+}
+
+.add .des{
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 1vw 0 0 1vw;
+    /* border: solid; */
+}
+
+.add .des i{
+    font-size: 2.1vw;
+    margin: 0 2vw 0 0;
+}
+
+.contact-add .add p{
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: 400;
+    font-size: 1.7vw;
+}
+
+
+.contact-form{
+    width: 50vw;
+    height: 100%;
+    /* border: solid; */
+    position:  relative;
+    justify-content: center;
+}
+
+.form-row{
+    width: 45vw;
+    height: 100%;
+    /* border: solid; */
+    position:  relative;
+    justify-content: center;
+}
+
+.form-row{
+    width: 45vw;
+    height: 10%;
+    /* border: solid; */
+    position:  relative;
+    justify-content: center;
+}
+input {
+    background-color:var(--modal-bg-color);
+    border: #d8d7d7 solid 0.12vw;
+    padding: 0.9vw 15px;
+    margin: 0.5vw 0;
+    width: 100%;
+    font-size: 0.8rem;
+    border-radius: 8px;
+    font-family: poppins;
+    font-size: 1.3vw;
+}
+
+textarea {
+    background-color:var(--modal-bg-color);
+    border: #d8d7d7 solid 0.12vw;
+    padding: 0.9vw 15px;
+    margin: 0.5vw 0;
+    width: 100%;
+    height: 18vh;
+    font-size: 0.8rem;
+    border-radius: 8px;
+    font-family: poppins;
+    font-size: 1.3vw;
+}
+
+input:focus,
+textarea:focus {
+    outline: 1px solid var(--third-color);
+}
+
+button {
+    border-radius: 8px;
+    border: none;
+    background-color: var(--third-color);
+    color: var(--modal-bg-color);
+    font-family: poppins;
+    font-weight: 500;
+    font-size: 1.3vw;
+    padding: 0.8vw 2vw;
+    letter-spacing: 1px;
+    transition: transform 80ms ease-out;
+    cursor: pointer;
+    transition: all .30s ease;
+}
+
+button:hover {
+    opacity: 0.7;
+}
+
+.maps{
+    width: 100%;
+    height: auto;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    /* border: solid; */
+}
+
+@media only screen and (max-width: 600px){
+    .home-contact-text h1{
+        font-size: 30px;
+        text-align: center;
+    }
+    .home-contact-text h2{
+        font-size: 18px;
+        text-align: center;
+        line-height: 1.5;
+    }
+
+    .contact-des{
+        width: 100%;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        text-align: center;
+        /* border: solid; */
+    }
+    .contact-des p.contact-text{
+        font-size: 15px;
+    }
+
+    .contact-adf{
+        margin: 40px 5%;
+        flex-wrap: wrap;
+        justify-content: left;
+    }
+
+    .contact-adf .contact-add{
+        width: 100%;
+    margin-bottom: 30px;
+    }
+    .contact-add .add h1{
+        font-size: 25px;
+    }
+
+
+    .add .des{
+        margin-bottom: 20px;
+    }
+    .add .des i{
+        font-size: 20px;
+        margin: 0 2vw 0 0;
+    }
+    
+    .contact-add .add p{
+        font-family: 'Source Sans 3', sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+    }
+    
+    .form-row{
+        width: 100%;
+        height: 100%;
+        /* border: solid; */
+        position:  relative;
+        justify-content: center;
+    }
+    .form-group{
+        /* border: solid; */
+        width: 400px;
+    }
+
+    input {
+        padding: 2.1vw 15px;
+        margin: 1.3vw 0;
+        border-radius: 5px;
+        font-size: 13px;
+    }
+
+    textarea {
+        padding: 2.1vw 15px;
+        margin: 1.3vw 0;
+        border-radius: 5px;
+        font-size: 13px;
+    }
+
+    button {
+        border-radius: 5px;
+        border: none;
+        background-color: var(--third-color);
+        color: var(--modal-bg-color);
+        font-family: poppins;
+        font-weight: 500;
+        font-size: 13px;
+        padding: 2.1vw 3vw;
+        letter-spacing: 1px;
+        transition: transform 80ms ease-out;
+        cursor: pointer;
+        transition: all .30s ease;
+    }
+
+
+
+}

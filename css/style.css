@@ -1,0 +1,1959 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sarabun:wght@200;300;400;500;600&family=Roboto:wght@100;300;400;500&display=swap');
+
+/* Font Freight Medium */
+@import url(https://db.onlinewebfonts.com/c/90fe831fa65b9632a4790c1a1732e9ab?family=FreightNeo+W03+Medium);
+
+/* Font Freight Light */
+
+@import url(https://db.onlinewebfonts.com/c/251dff4c8f7ab0a6f3258b61f6527ad5?family=FreightNeo+W03+Light);
+
+/* Font Freight Medium Italic */
+@import url(https://db.onlinewebfonts.com/c/ee4d865b795f326ff226bc0baaa2694c?family=FreightNeo+W03+Medium+Italic);
+
+/* Font Freight Medium Italic Light*/
+@import url(https://db.onlinewebfonts.com/c/01f250e37cc2465ba7178a3181078f59?family=FreightNeo+W03+Light+Italic);
+
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400&display=swap');
+
+/* tamil */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@300;400;500&display=swap');
+
+
+@font-face {
+    font-family: 'headline';
+    src:url('../font/PassionSansPDbi-SemiBoldSmallCaps.ttf.woff') format('woff'),
+        url('../font/PassionSansPDbi-SemiBoldSmallCaps.ttf.svg#PassionSansPDbi-SemiBoldSmallCaps') format('svg'),
+        url('../font/PassionSansPDbi-SemiBoldSmallCaps.ttf.eot'),
+        url('../font/PassionSansPDbi-SemiBoldSmallCaps.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root{
+    /* ====Main theme colors==== */
+    --first-color : #475D5B;
+    --second-color : #42B300;
+    --third-color : #777;
+    --headline-color : #FA5246;
+
+    /* ====Hover colors==== */
+    --awal-bg-color:#E8DCB3;
+    --hover-color : #2cb67d;
+    --button-hover-color : #FCBB3B;
+
+    /* ====Background colors==== */
+    --title-bg-color:#475D5B;
+    --body-bg-color: #fefefe;
+    --card-bg-color: #fff;
+    --modal-bg-color:#fff;
+    --bg-color:#F2F7F5;
+    --bg-transparent-color: rgba(0,0,0,0.1);
+    --transparent-color-01: rgba(0,0,0,0.1);
+    --transparent-color-02: rgba(106,89,209,0.1);
+    --line-color : #d7d7d7;
+
+    /* ====Scroll-bar colors==== */
+    --scroll-bar-color:#c5cadf;
+    --scroll-thumb-color:#70768a;
+    --scroll-thumb-hover-color: #454f6b;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans 3', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    color: var(--first-color);
+    background: var(--body-bg-color);
+    margin: 2rem 0 0 0;
+    transition: .5s ease;
+    position: relative;
+}
+a{
+    text-decoration: none;
+    color: var(--first-color);
+}
+
+li{
+    list-style: none;
+}
+
+/* HEADER */
+header{
+    z-index: 99999;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background:var(--card-bg-color);
+    box-shadow: 0 2px 8px 1px rgb(32 33 36/10% );
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 10%;
+    transition: top 0.3s;
+    /* border: solid; */
+
+}
+
+.logo img{
+    width: 200px;
+    height: auto;
+    /* padding: 20%; */
+}
+
+.navbar{
+    display: flex;
+    margin-left: 28%;
+}
+
+.navbar li{
+    /* border: solid; */
+    width: 95px;
+    text-align: center;
+}
+
+.navbar li.id{
+    /* border: solid; */
+    width: 135px;
+    text-align: center;
+}
+
+.navbar a{
+    color:var(--first-color);
+    font-family: roboto;
+    font-size: 15px;
+    font-weight: 400;
+    margin: 10px 0;
+    transition: all .50s ease;
+    letter-spacing: 1px;
+}
+.navbar a:hover{
+    color: var(--button-hover-color);
+}
+
+#menu-icon{
+    display: none;
+}
+
+/* home section */
+
+.home{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/HOME2.jpg);
+    background-size: cover;
+    position: relative; 
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* border: solid; */
+    
+}
+
+.home-text{
+    /* padding-top: 210px;   */
+    padding-top: 40vh;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    /* border: solid; */
+
+}
+
+.home-text h1{
+    font-family: 'headline';
+    font-size: 45px;
+    color: var(--body-bg-color);
+    align-items: center;
+    justify-content: center;
+    /* display: flex; */
+    letter-spacing: 5px;
+    padding-bottom: 10px;
+    opacity: 90%;
+}
+
+.home-text h2{
+    font-family: 'Noto Sans Tamil', sans-serif;
+    font-weight: 500;
+    font-size: 35px;
+    color: var(--body-bg-color);
+    align-items: center;
+    justify-content: center;
+    /* display: flex; */
+    letter-spacing: 1px;
+    opacity: 90%;
+    padding-bottom: 10px;
+}
+
+/* .home-text .icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 65px;
+}
+
+.home-text .icon a i{
+    color: var(--bg-color);
+    padding: 20px;
+    font-size: 1.5em;
+    transition: all .3s ease;
+}
+.home-text .icon a i:hover{
+    color: var(--hover-color);
+}
+
+.home-text .icon a i::before{
+    background: #FAAE2B;
+    padding: 10px 12px;
+    border-radius: 100%;
+    z-index: -20;
+    opacity: 0.8;
+}
+
+.home-text .icon .ff i::before{
+    background:#FAAE2B;
+    padding: 10px 15px;
+    border-radius: 100%;
+    z-index: -20;
+    opacity: 0.8;
+}
+
+.home .scroll-down{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+} 
+
+.home .scroll-down img{
+    color: var(--body-bg-color);
+    width: 40px;
+    animation: arrow-down ease 2s infinite;
+    margin: 3px;
+} */
+
+/* Know us section */
+.knowus{
+    width: 100%;
+    height: auto;
+    position: relative; 
+    align-items: center;
+    justify-content: center;
+    padding: 60px 6%;
+    background-color: #fff;
+}
+
+.knowus::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(../img/bg3.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 500px;
+    opacity:1;
+}
+
+.knowus-content{
+    width: 100%;
+    height: auto;
+    position: relative; 
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding-top: 20px;
+}
+
+.knowus-command{
+    width: 62%;
+    align-items: center;
+    padding-bottom: 40px;
+}
+
+.knowus-command h1{
+    font-family: "FreightNeo W03 Medium";
+    font-weight: 500;
+    font-size: 32px;
+    padding-bottom: 30px;
+
+}
+
+.knowus-command p{
+    font-family: "FreightNeo W03 Medium";
+    font-weight: 300;
+    font-size: 32px;
+}
+
+.knowus-content img{
+    width: 650px;
+    border-radius: 9px;
+}
+
+.knowus-isi-content{
+    padding-left: 45px;
+}
+
+.knowus-content .text-content h2{
+    font-family: 'Crimson Pro', serif;
+    font-weight: 300;
+    font-size: 21px;
+    letter-spacing: 0.5px;
+    font-style: italic;
+    margin-bottom: 13px;
+}
+
+.knowus-content .text-content h1{
+    font-family: "FreightNeo W03 Medium";
+    font-weight: 500;
+    font-size: 35px;
+    margin-bottom: 3px;
+}
+
+.knowus-content .text-content hr{
+    width: 70px;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    background: var(--hover-color);
+}
+
+.knowus-content .text-content p{
+    font-family: 'Source Sans 3', sans-serif;
+    margin-top: 30px;
+    font-weight: 300;
+    font-size: 15px;
+    letter-spacing: 0.6px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.knowus-isi-content a{
+    display: flex;
+    padding-top: 30px;
+    align-items: center;
+    font-family: "FreightNeo W03 Light";
+    color: var(--first-color);
+    font-size: 20px;
+    animation: arrow-left ease 2s infinite;
+    transition: all .3s ease;
+}
+
+.knowus-isi-content a:hover{
+    letter-spacing: 1px;
+    font-family: "FreightNeo W03 Medium";
+    animation: none;
+}
+
+.knowus-content .knowus-isi-content a img{
+    width: 80px;
+    height: 4px;
+    padding-right: 15px;
+}
+
+
+/* Distribution section */
+.distribution{
+    width: 100%;
+    height: auto;
+    position: relative; 
+    align-items: center;
+    justify-content: center;
+    padding: 60px 0 20px;
+    background-color: #fff;
+    /* border: solid; */
+}
+
+/* .distribution::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(../img/bg2.png) ;
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: 400px;
+    opacity: 0.08;
+} */
+
+.distribution .distribution-content{
+    position: relative;
+    text-align: center;
+    justify-content: center;
+}
+
+.distribution-content .distribution-title{
+    padding-bottom: 50px;
+    background-color: var(--title-bg-color) ;    
+    height: 210px;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 50px;
+}
+/* .distribution-content .distribution-title::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(../img/4.png) ;
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: 400px;
+    opacity: 0.08;
+} */
+
+.distribution-title h2{
+    font-family: "FreightNeo W03 Medium";
+    font-weight: 300;
+    font-size: 35px;
+    color: var(--modal-bg-color);
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.distribution-title h1{
+    font-family: 'Noto Sans Tamil', sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 50px;
+    margin-bottom: 5px;
+    color: var(--button-hover-color);
+}
+
+.distribution-content img{
+    width: 1000px;
+    height: auto;
+    margin-top: 40px;
+}
+
+.isi-data{
+    display: flex;
+    justify-content: center;
+    padding: 50px 0 50px 0;
+}
+
+.isi-data .data{
+    margin: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    /* border: solid; */
+}
+
+.data-tons{
+    display: flex;
+    justify-content: center;
+}
+
+.data-tons-1{
+    display: flex;
+    justify-content: center;
+
+}
+
+.data-tons-2{
+    display: flex;
+    justify-content: center;
+
+}
+
+.isi-data .data p{
+    color: var(--button-hover-color);
+    place-items: center;
+    font-weight: 600;
+    font-size: 40px;
+    font-family: "FreightNeo W03 Light Italic";
+    color: var(--headline-color);
+    margin-bottom: 20px;
+    /* width: 20vw; */
+    /* border: solid; */
+}
+
+.isi-data .data span.num1{
+    font-family: "FreightNeo W03 Light Italic";
+    font-size: 55px;
+}
+.isi-data .data span.num{
+    font-family: "FreightNeo W03 Light Italic";
+    font-size: 55px;
+}
+
+.data span.text{
+    font-family: "FreightNeo W03 Medium";
+    font-size: 18px;
+}
+
+
+/* Our Product Section */
+.ourproduct{
+    width: 100%;
+    height: auto;
+    position: relative; 
+    align-items: center;
+    justify-content: center;
+    padding: 60px 0 20px;
+    background-color: var(--bg-color);
+    margin-bottom: 10px;
+}
+
+/* .ourproduct::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(../img/bawah.png);
+    background-repeat: repeat-x;
+    background-position: bottom left;
+    background-size: 99vw;
+    opacity: 0.2;
+    animation: arrow-down ease 2s infinite;
+}  */
+
+.ourproduct-title{
+    padding-bottom: 50px;
+    border: solid;
+    width: 100%;
+    background-color: var(--title-bg-color) ;    
+    height: 210px;
+    position: absolute;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 50px;
+    top: 0;
+}
+
+.ourproduct-title h2{
+    font-family: "FreightNeo W03 Medium";
+    font-weight: 300;
+    font-size: 35px;
+    color: var(--modal-bg-color);
+    margin-top: 50px;
+}
+
+.ourproduct-title h1{
+    font-family: 'Noto Sans Tamil', sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 50px;
+    margin-bottom: 5px;
+    color: var(--button-hover-color);
+}
+
+.ourproduct .product-display{
+    margin-top: 200px; 
+    /* border: solid red; */
+}
+
+.ourproduct .product-display .product-content{
+    position: relative;
+    justify-content: center;
+    display: flex;
+    /* border: solid; */
+}
+
+.ourproduct .product-display .product-content img{
+    width: 400px;
+    height: auto;
+    margin-right: 50px;
+    /* border: solid; */
+    /* margin: 50px; */
+}
+
+.ourproduct .product-display .product-content img.bubuk{
+    width: 400px;
+    height: 300px;
+    margin-right: 50px;
+    /* border: solid; */
+    /* margin: 50px; */
+}
+
+
+.ourproduct .product-display .product-content .product-des .produk-des h2{
+    font-family: "FreightNeo W03 Light Italic";
+    font-size: 40px;
+    padding: 20px 0 20px;
+}
+
+.ourproduct .product-display .product-content .product-des .produk-des p{
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    letter-spacing: 0.6px;
+    line-height: 1.5;
+    padding-bottom: 20px;
+    width: 500px;
+}
+
+.ourproduct .product-display .product-content .product-des a{
+    display: flex;
+    margin-top: 30px;
+    align-items: center;
+    font-family: "FreightNeo W03 Medium";
+    color: var(--first-color);
+    font-size: 22px;
+    animation: arrow-left ease 2s infinite;
+    transition: all .3s ease;
+    width: 350px;
+    /* border: solid; */
+}
+.ourproduct .product-display .product-content .product-des a img{
+    width: 100px;
+    height: 5px;
+    padding-right: 15px;
+}
+
+.ourproduct .product-display .product-content .product-des a:hover{
+    letter-spacing: 2px;
+    font-family: "FreightNeo W03 Medium";
+    animation: none;
+}
+
+
+/* Process Sequence */
+.process{
+    width: 100%;
+    height: auto;
+    position: relative; 
+    align-items: center;
+    justify-content: center;
+    padding: 60px 0 80px;
+    background-color: #fff;
+    height: auto;
+}
+
+.process::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(../img/bg10.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 1000px;
+    opacity:0.05;
+}
+
+.process-map{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 80vh;
+    /* border: solid; */
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    letter-spacing: 0.6px;
+    margin-top: 230px;
+}
+
+.process-title{
+    padding-bottom: 50px;
+    border: solid;
+    width: 100%;
+    background-color: var(--title-bg-color) ;    
+    height: 210px;
+    position: absolute;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 50px;
+    top: 0;
+}
+
+.process-title h2{
+    font-family: "FreightNeo W03 Medium";
+    font-weight: 300;
+    font-size: 35px;
+    color: var(--modal-bg-color);
+    margin-top: 50px;
+}
+
+.process-title h1{
+    font-family: 'Noto Sans Tamil', sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 50px;
+    margin-bottom: 5px;
+    color: var(--button-hover-color);
+    
+}
+
+
+
+.process-map .garis-utama{
+    position: absolute;
+    width: 80%;
+    left: 10%;
+    top: 260px;
+    height: 5px;
+    background-color: green;
+    color: green;
+    border-radius: 2px;
+}
+
+/* .process-map .bulat1{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: green;
+    position: absolute;
+    left: 50%;
+    top: 257px;
+}
+.process-map .bulat2{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: green;
+    position: absolute;
+    left: 58.7%;
+    top: 257px;
+}
+.process-map .bulat2{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: green;
+    position: absolute;
+    left: 58.7%;
+    top: 257px;
+
+}
+.process-map .bulat3{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: green;
+    position: absolute;
+    left: 67.4%;
+    top: 257px;
+
+}
+.process-map .bulat4{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: green;
+    position: absolute;
+    left: 76.1%;
+    top: 257px;
+
+}
+.process-map .bulat5{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: green;
+    position: absolute;
+    left: 84.9%;
+    top: 257px;
+
+}
+.process-map .bulat6{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: green;
+    position: absolute;
+    left: 41.3%;
+    top: 257px;
+
+}
+
+.process-map .bulat7{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: green;
+    position: absolute;
+    left: 32.6%;
+    top: 257px;
+
+}
+
+.process-map .bulat8{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: green;
+    position: absolute;
+    left: 23.9%;
+    top: 257px;
+
+}
+
+.process-map .bulat9{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: green;
+    position: absolute;
+    left: 15%;
+    top: 257px;
+
+} */
+
+.process-map .garis1{
+    position: absolute;
+    left: 50%;
+    top: 212px;
+    height: 50px;
+    width: 3px;
+    background-color: green;
+    color: green;
+    border-radius: 2px;
+}
+
+.process-map .garis2{
+    position: absolute;
+    left: 60%;
+    top: 260px;
+    height: 50px;
+    width: 3px;
+    background-color: green;
+    color: green;
+    border-radius: 2px;
+}
+
+.process-map .garis3{
+    position: absolute;
+    left: 70%;
+    top: 212px;
+    height: 50px;
+    width: 3px;
+    background-color: green;
+    color: green;
+    border-radius: 2px;
+}
+.process-map .garis4{
+    position: absolute;
+    left: 80%;
+    top: 260px;
+    height: 50px;
+    width: 3px;
+    background-color: green;
+    color: green;
+    border-radius: 2px;
+}
+.process-map .garis5{
+    position: absolute;
+    left: 89.7%;
+    top: 212px;
+    height: 50px;
+    width: 3px;
+    background-color: green;
+    color: green;
+    border-radius: 2px;
+}
+.process-map .garis6{
+    position: absolute;
+    left: 40%;
+    top: 260px;
+    height: 50px;
+    width: 3px;
+    background-color: green;
+    color: green;
+    border-radius: 2px;
+}
+.process-map .garis7{
+    position: absolute;
+    left: 30%;
+    top: 212px;
+    height: 50px;
+    width: 3px;
+    background-color: green;
+    color: green;
+    border-radius: 2px;
+}
+.process-map .garis8{
+    position: absolute;
+    left: 20%;
+    top: 260px;
+    height: 50px;
+    width: 3px;
+    background-color: green;
+    color: green;
+    border-radius: 2px;
+}
+.process-map .garis9{
+    position: absolute;
+    left: 10%;
+    top: 212px;
+    height: 50px;
+    width: 3px;
+    background-color: green;
+    color: green;
+    border-radius: 2px;
+}
+
+.process-map .p-1{
+    position: absolute;
+    left: 3%;
+    top: 160px;
+}
+.process-map .p-3{
+    position: absolute;
+    left: 13%;
+    top: 340px;
+}
+
+.process-map .p-2{
+    position: absolute;
+    left: 26.3%;
+    top: 160px;
+}
+
+.process-map .p-2-id{
+    position: absolute;
+    left: 27.8%;
+    top: 160px;
+}
+
+.process-map .p-4{
+    position: absolute;
+    left: 33%;
+    top: 340px;
+}
+
+.process-map .p-5{
+    position: absolute;
+    left: 44%;
+    top: 160px;
+}
+.process-map .p-5-id{
+    position: absolute;
+    left: 43%;
+    top: 160px;
+}
+
+.process-map .p-6{
+    position: absolute;
+    left: 56.2%;
+    top: 340px;
+}
+.process-map .p-6-id{
+    position: absolute;
+    left: 57%;
+    top: 340px;
+}
+
+.process-map .p-7{
+    position: absolute;
+    left: 64.5%;
+    top: 160px;
+}
+.process-map .p-8{
+    position: absolute;
+    left: 75.5%;
+    top: 340px;
+}
+.process-map .p-9{
+    position: absolute;
+    left: 87%;
+    top: 160px;
+}
+.process-map .p-9-id{
+    position: absolute;
+    left: 86%;
+    top: 160px;
+}
+
+.process-map img.g-1{
+    position: absolute;
+    width: 150px;
+    left: 4%;
+    top: 70px;
+}
+
+.process-map img.g-2{
+    position: absolute;
+    width: 80px;
+    left: 27%;
+    top: 25px;
+}
+
+.process-map img.g-3{
+    position: absolute;
+    width: 130px;
+    left: 45%;
+    top: 25px;
+}
+
+.process-map img.g-4{
+    position: absolute;
+    width: 130px;
+    left: 64.5%;
+    top: 40px;
+}
+
+.process-map img.g-5{
+    position: absolute;
+    width: 130px;
+    left: 84%;
+    top: 85px;
+}
+
+.process-map img.g-6{
+    position: absolute;
+    width: 160px;
+    left: 12%;
+    top: 400px;
+}
+
+.process-map img.g-7{
+    position: absolute;
+    width: 180px;
+    left: 33%;
+    top: 400px;
+}
+
+.process-map img.g-8{
+    position: absolute;
+    width: 160px;
+    left: 54%;
+    top: 400px;
+}
+
+.process-map img.g-9{
+    position: absolute;
+    width: 160px;
+    left: 74%;
+    top: 400px;
+}
+
+
+
+footer{
+    width: 100%;
+    height: auto;
+    position: relative; 
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: var(--bg-color);
+}
+
+/* footer::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(../img/bawah.png) ;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 400px;
+} */
+
+.bagian-footer{
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 50px;
+    /* border: solid; */
+}
+
+.bagian-footer .footer-des{
+    /* border: solid; */
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    margin-right: 100px;
+    width: 450px;
+    /* border: solid; */
+}
+.bagian-footer .footer-des img{
+    width: 300px;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 20px;
+    /* border: solid; */
+}
+
+.bagian-footer .footer-des p{
+    font-size: 20px;
+    font-family: "FreightNeo W03 Light";
+    text-align: justify;
+}
+
+.bagian-footer .footer-k{
+    display: flex;
+}
+
+.bagian-footer .footer-nav{
+    position: relative;
+    align-items: center;
+    /* border: solid; */
+    margin-right: 57px;
+    width: 155px;
+}
+
+.footer-nav li{
+    margin: 10px;
+}
+
+.footer-nav li a{
+    font-family: "FreightNeo W03 Medium";
+    font-size: 20px;
+    color: var(--first-color);
+    transition: all 0.3s ease;
+}
+
+.footer-nav li a:hover{
+    letter-spacing: 1px;
+}
+
+.footer-contact{
+    position: relative;
+    align-items: center;
+}
+
+.footer-contact p.text{
+    font-family: "FreightNeo W03 Medium";
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.footer-contact .fc{
+    position: relative;
+    align-items: center;
+    display: flex;
+    width: 300px;
+    /* border: solid; */
+}
+
+.footer-contact .fc3{
+    margin-bottom: 0;
+}
+
+.footer-contact .fc3 i{
+    margin-right: 10px;
+}
+
+.footer-contact .fc i{
+    font-size: 23px;
+    margin-top: -17px;
+    padding-right: 25px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-contact .fc p{
+    font-family: "FreightNeo W03 Medium";
+    font-size: 18px;    
+    margin-bottom: 15px;
+}
+
+.footer-contact .fc3 p{
+    font-family: "FreightNeo W03 Medium";
+    font-size: 15px;    
+}
+
+
+
+/* CSS untuk dropdown kustom */
+.custom-dropdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 1px 6px 0 rgb(32 33 36/30% );
+    background: #fff;
+    /* position: fixed; */
+    /* z-index: 8000; */
+    bottom: 40px;
+    cursor: pointer;
+    right: 30px;
+    /* border: solid; */
+}
+
+.custom-dropdown-select {
+    display: block;
+    padding: 10px;
+    font-size: 16px;
+    z-index: 8001;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    /* border: solid; */
+}
+
+.custom-dropdown-select img{
+    margin-right: 0.5vw;
+    width: 25px;
+}
+
+.custom-dropdown-select i{
+    margin-left: 0.5vw;
+ /* border: solid; */
+}
+
+.custom-dropdown-options {
+    position: absolute;
+    box-shadow: 0 2px 8px 1px rgb(32 33 36/30% );
+    border-radius: 8px;
+    display: none;
+    padding: 0 0.5vw;
+    z-index: 8002;
+    background: #fff;
+    margin-top: 100px;
+    margin-right: 35px;
+    font-size: 17px;
+
+}
+
+.custom-dropdown-option {
+    display: block;
+    padding: 10px;
+    z-index: 8003;
+    cursor: pointer;
+    display: flex;
+    font-weight: bold;
+}
+
+.custom-dropdown-options:not(img):hover{
+    background-color: var(--line-color);
+}
+
+.custom-dropdown-option img {
+    max-width: 20px;
+    max-height: 20px;
+    z-index: 8004;
+    margin-right: 10px;
+}
+
+.icon.rotate {
+    transform: rotate(180deg);
+} 
+
+
+/* whatsapp */
+.logo-w{
+    display: block;
+    z-index: 9000;
+    position: fixed;
+    bottom: 43px;
+    right: 50px;
+    background-color: var(--card-bg-color);
+    width: 80px;
+    height: 80px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px 2px rgb(32 33 36/30% );
+
+}
+
+.logo-w img{
+    width: 100%;
+    height: 100%;
+}
+
+
+/* revealR */
+.revealR{
+    position: relative;
+    transform: translatex(20px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+
+.revealR.active{
+    transform: translateX(0px);
+    opacity: 1;
+}
+
+/* revealL */
+.revealL{
+    position: relative;
+    transform: translatex(-20px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+
+.revealL.active{
+    transform: translateX(0px);
+    opacity: 1;
+}
+
+/* revealT */
+.revealT{
+    position: relative;
+    transform: translateY(20px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+
+.revealT.active{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+/* revealB */
+.revealB{
+    position: relative;
+    transform: translateY(-20px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+
+.revealB.active{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+
+@keyframes arrow-down{
+    0%{
+        transform: translateY(0);
+    }
+    30%{
+        transform: translateY(10px);
+    }
+}
+
+@keyframes arrow-left{
+    0%{
+        transform: translateX(0);
+    }
+    30%{
+        transform: translateX(8px);
+    }
+}
+
+#check{
+    display: none;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .navbar{
+        display: none;
+    }
+    header{
+        padding: 8px 5%;
+        width: 95%;
+        margin: 0 2.5%;
+        /* border: solid; */
+    }
+    .logo img{
+        width: 150px;
+        height: auto;
+    }
+
+    .h-icons i{
+        display: flex;
+        font-size: 20px;        
+        margin-right: 10px;
+        /* border: solid; */
+    }
+
+    #menu-icon{
+        display: block;
+        align-items: center;
+        justify-content: center;
+        /* z-index: 2000001; */
+        font-size: 20px;
+        cursor: pointer;
+
+    }
+
+    .navbar{
+        position: absolute;
+        top: -800px;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        /* border: solid; */
+        text-align: left;
+        background-color: var(--card-bg-color);
+        transition: all .50s ease;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .navbar li{
+        /* border: solid; */
+        text-align: left;
+        margin: 0 5% 0 0;
+        width: 100%;
+        transition: all .50s ease;
+    }
+
+    .navbar a{
+        display: block;
+        padding: 5px;
+        margin: 15px;
+        font-size: 15px;
+    }
+
+    .navbar li:hover{
+        background-color: var(--bg-color);
+    }
+
+    .navbar.active{
+        top: 100%;
+    }
+
+
+    .custom-dropdown {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border-radius: 8px;
+        box-shadow: 0 1px 6px 0 rgb(32 33 36/30% );
+        background: #fff;
+        cursor: pointer;
+        right: 15%;
+        top: 50%;
+        position: absolute;
+    }
+    
+    .custom-dropdown-select {
+        display: block;
+        padding: 8px;
+        font-size: 16px;
+        z-index: 8001;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-weight: bold;
+        /* border: solid; */
+    }
+    
+    .custom-dropdown-select img{
+        margin-right: 0.5vw;
+        width: 25px;
+    }
+    
+    .custom-dropdown-select i{
+        margin-left: 0.5vw;
+     /* border: solid; */
+    }
+    
+    .custom-dropdown-options {
+        position: absolute;
+        box-shadow: 0 2px 8px 1px rgb(32 33 36/30% );
+        border-radius: 8px;
+        display: none;
+        padding: 0 0.5vw;
+        z-index: 8002;
+        background: #fff;
+        margin-top: 100px;
+        margin-right: 35px;
+        font-size: 17px;
+    
+    }
+    
+    .custom-dropdown-option {
+        display: block;
+        padding: 10px;
+        z-index: 8003;
+        cursor: pointer;
+        display: flex;
+        font-weight: bold;
+    }
+    
+    .custom-dropdown-options:not(img):hover{
+        background-color: var(--line-color);
+    }
+    
+    .custom-dropdown-option img {
+        max-width: 20px;
+        max-height: 20px;
+        z-index: 8004;
+        margin-right: 10px;
+    }
+    
+    .icon.rotate {
+        transform: rotate(180deg);
+    } 
+
+    .logo-w{
+        width: 50px;
+        height: 50px;
+        bottom: 23px;
+        right: 30px;
+    }
+
+
+    .home-text h1{
+        font-size: 20px;
+    }
+
+    .home-text h2{
+        font-size: 16px;
+    }
+
+    .knowus::before{
+        background-size: 300px;
+    }
+    
+    .knowus-command{
+        width: 90%;
+        align-items: center;
+        padding-bottom: 40px;
+    }
+    .knowus-command h1{
+        font-family: "FreightNeo W03 Medium";
+        font-weight: 500;
+        font-size: 20px;
+        padding-bottom: 20px;
+    }
+    .knowus-command p{
+        font-family: "FreightNeo W03 Medium";
+        font-weight: 300;
+        font-size: 20px;
+        /* width: 10%; */
+    }
+
+    .knowus-content{
+        display: grid;
+        width: 100%;
+    }
+
+    .knowus-content img{
+        width: 100%;
+        border-radius: 9px;
+        margin-bottom: 20px;
+    }
+
+    .knowus-isi-content{
+        padding-left: 0;
+    }
+
+    .knowus-isi-content a{
+        padding-top: 0;
+        padding: 0;
+        margin-top: 20px;
+        /* border: solid; */
+        font-size: 19px;
+    }
+
+    .knowus-content .text-content h1{
+        font-size: 30px;
+    }
+
+    .knowus-content .knowus-isi-content a img{
+        width: 80px;
+        height: 4px;
+        padding-right: 15px;
+        margin-top: 20px;
+        /* border: solid; */
+    }
+
+    .knowus{
+        padding: 60px 6% 10px;
+    }
+    
+    .distribution-title h2{
+        font-size: 20px;
+        width: 100%;
+
+    }
+
+    .distribution-title h1{
+        font-size: 28px;
+        width: 100%;
+    }
+
+    .distribution-content .distribution-title{   
+        width: 100%;
+        height: 160px;
+        background-color: var(--first-color);
+        /* border: solid red; */
+        
+    }
+
+    .distribution-content img{
+        width: 90%;
+        margin-top: 20px;
+        /* border: solid; */
+    }
+
+    .isi-data{
+        display: flex;
+        justify-content: center;
+        padding: 50px 0 50px 0;
+        /* border: solid; */
+    }
+    
+    .isi-data .data{
+        margin: 10px;
+        padding-left: 15px;
+        padding-right: 20px;
+        /* border: solid; */
+    }
+    
+    .isi-data .data p{
+        color: var(--button-hover-color);
+        place-items: center;
+        font-weight: 600;
+        font-size: 25px;
+        font-family: "FreightNeo W03 Light Italic";
+        color: var(--headline-color);
+        margin-bottom: 20px;
+        /* width: 20vw; */
+        /* border: solid; */
+    }
+    
+    .isi-data .data span.num1{
+        font-family: "FreightNeo W03 Light Italic";
+        font-size: 30px;
+    }
+    .isi-data .data span.num{
+        font-family: "FreightNeo W03 Light Italic";
+        font-size: 30px;
+
+    }
+    
+    .data span.text{
+        font-family: "FreightNeo W03 Medium";
+        font-size: 15px;
+        /* border: solid; */
+    }
+    .isi-data{
+        flex-wrap: wrap;
+    }
+
+    .ourproduct-title{
+        background-color: var(--title-bg-color) ;    
+        height: 160px;
+    }
+
+    .ourproduct-title h2{
+        font-size: 20px;
+    }
+
+    .ourproduct-title h1{
+        font-size: 30px;
+    }
+
+    .ourproduct .product-display{
+        margin-top: 130px; 
+        /* border: solid red; */
+        padding: 3%;
+    }
+
+    .ourproduct .product-display .product-content {
+        flex-wrap: wrap;
+        justify-content: center;
+        /* padding-left: 3%; */
+        /* border: solid; */
+
+    }
+
+    .ourproduct .product-display .product-content img{
+        width: 250px;
+        justify-content: center;
+        /* border: solid; */
+    }
+    .ourproduct .product-display .product-content .product-des .produk-des{
+        width: 100%;
+        /* border: solid; */
+    }
+
+    .ourproduct .product-display .product-content .product-des .produk-des p{
+        width: 100%;
+        font-size: 16px;
+        line-height: 1.8;
+
+    }
+    .ourproduct .product-display .product-content .product-des .produk-des h2{
+        font-size: 25px;
+    }
+
+    .ourproduct .product-display .product-content .product-des a{
+        margin-top: 5px;
+        margin-bottom: 50px;
+        font-size: 20px;
+        width: 350px;
+        /* border: solid; */
+    }
+
+    .ourproduct .product-display .product-content .product-des a img{
+        width: 70px;
+        height: 4px;
+        padding-right: 0;
+    }
+
+
+    .bagian-footer{
+        flex-wrap: wrap;
+        /* border: solid; */
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bagian-footer .footer-des{
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        margin-bottom: 30px;
+    }
+
+    .bagian-footer .footer-des p{
+        font-size: 18px;
+        line-height: 1.5;
+    }
+
+    .footer-k{
+        margin: 0;
+        width: 100%;
+    }
+
+    .footer-nav li a{
+        font-size: 18px;
+    }
+
+    .footer-contact{
+        /* border: solid; */
+        width: 60%;
+    }
+
+    .footer-contact p.text{
+        /* border: solid; */
+        width: 100%;
+    }
+
+    .footer-contact .fc{
+        /* border: solid; */
+        width: 100%;
+    }
+
+    .footer-contact .fc p{
+        /* border: solid; */
+        font-size: 15px;
+    }
+
+    .process-title{
+        width: 100%;
+        height: 130px;
+        background-color: var(--first-color);
+    }
+
+    .process-title h2{
+        font-size: 20px;
+        margin-top: 30px;
+    }
+    
+    .process-title h1{
+        font-size: 28px;
+    }
+
+    .process-map{
+        height: 160vh;
+    }
+
+    .process-map .garis-utama, .process-map .garis1, .process-map .garis2, .process-map .garis3, .process-map .garis4, .process-map .garis5, .process-map .garis6, .process-map .garis7, .process-map .garis8, .process-map .garis9 {
+        display: none;
+    }
+
+    .process-map img.g-1{
+        left: 8%;
+        top: 10px;
+        /* border: solid; */
+    }
+    .process-map .p-1{
+        position: absolute;
+        left: 5%;
+        top: 90px;
+    }
+
+    .process-map img.g-6{
+        left: 58%;
+        top: 0px;
+        /* border: solid; */
+        /* display: none; */
+    }
+    .process-map .p-6{
+        position: absolute;
+        left: 65%;
+        top: 90px;
+        /* display: none; */
+    }
+
+    .process-map .p-6-id{
+        position: absolute;
+        left: 67%;
+        top: 90px;
+        /* display: none; */
+    }
+
+    .process-map img.g-2{
+        left: 14%;
+        top: 170px;
+        /* border: solid; */
+        /* display: none; */
+    }
+    .process-map .p-2{
+        position: absolute;
+        left: 13%;
+        top: 290px;
+        /* display: none; */
+    }
+
+    .process-map .p-2-id{
+        position: absolute;
+        left: 16%;
+        top: 290px;
+        /* display: none; */
+    }
+
+    .process-map img.g-7{
+        left: 55%;
+        top: 170px;
+        /* border: solid; */
+        /* display: none; */
+    }
+    .process-map .p-7{
+        position: absolute;
+        left: 61%;
+        top: 290px;
+        /* display: none; */
+    }
+
+    .process-map img.g-3{
+        left: 8%;
+        top: 390px;
+        /* border: solid; */
+        /* display: none; */
+    }
+    .process-map .p-3{
+        position: absolute;
+        left: 5%;
+        top: 510px;
+        /* display: none; */
+    }
+    .process-map img.g-8{
+        left: 60%;
+        top: 390px;
+        /* border: solid; */
+        /* display: none; */
+    }
+    .process-map .p-8{
+        position: absolute;
+        left: 63%;
+        top: 510px;
+        /* display: none; */
+    }
+    .process-map img.g-4{
+        left: 10%;
+        top: 620px;
+        /* border: solid; */
+        /* display: none; */
+    }
+    .process-map .p-4{
+        position: absolute;
+        left: 55%;
+        top: 740px;
+        width: 200px;
+        /* display: none; */
+    }
+    .process-map img.g-9{
+        left: 60%;
+        top: 620px;
+        /* border: solid; */
+        /* display: none; */
+    }
+    .process-map .p-9{
+        position: absolute;
+        left: 5%;
+        top: 740px;
+        /* display: none; */
+    }
+
+    .process-map .p-9-id{
+        position: absolute;
+        left: 13%;
+        top: 740px;
+        /* display: none; */
+    }
+
+    .process-map img.g-5{
+        left: 22%;
+        top: 850px;
+        /* border: solid; */
+        width: 250px;
+        /* display: none; */
+    }
+    .process-map .p-5{
+        position: absolute;
+        left: 33%;
+        top: 970px;
+        /* display: none; */
+    }
+
+    .process-map .p-5-id{
+        position: absolute;
+        left: 32%;
+        top: 970px;
+        /* display: none; */
+    }
+
+    .navbar li.id{
+        /* border: solid; */
+        width: 100%;
+        text-align: start;
+    }
+
+    .bagian-footer .footer-des img{
+        width: 85%;
+        margin: 0 7.5%;
+        align-items: center;
+        position: relative;
+        justify-content: center;
+        display: flex;
+        margin-bottom: 20px;
+        /* border: solid; */
+    }
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
